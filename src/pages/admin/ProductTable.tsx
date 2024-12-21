@@ -55,7 +55,7 @@ const ProductTable = () => {
                 <td>{item.description}</td>
                 <td>
                   <button
-                    className="btn btn-danger"
+                    className="btn btn-danger" style={{marginRight:"10px"}}
                     onClick={() => {
                     if(item.id) handleDelete(+item.id)
                     }}  
