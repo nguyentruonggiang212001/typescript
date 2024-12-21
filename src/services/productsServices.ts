@@ -6,6 +6,12 @@ export const getAllProducts = async () => {
 	const { data } = await instance.get("/products");
 	return data;
 };
+export const getById = async (id: number) => {
+  const { data } = await instance.get(`/products/${id}`);
+  return data;
+};
+
+
 
 export const addProduct = async (product: IProduct): Promise<IProduct> => {
 	const { data } = await instance.post("/products", product);
